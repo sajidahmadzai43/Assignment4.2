@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dance Party</title>
+</head>
+<body>
+
+<header>
+    Dance Party
+</header>
+
+<div class="buttons">
+    <button onclick="playMusic()">Play Music</button>
+    <button onclick="stopMusic()">Stop Music</button>
+</div>
+
+<div id="dancers">
+    <img src="girl1.gif" id="dancer1" class="dancer">
+    <img src="girl2.gif" id="dancer2" class="dancer">
+    <img src="girl3.gif" id="dancer3" class="dancer">
+    <img src="girl4.gif" id="dancer4" class="dancer">
+    <img src="dance.gif" id="dance-gif" class="dancer">
+</div>
+
+<video id="background-video" loop autoplay muted>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<audio id="music">
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<footer>
+    Made by Sajid
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

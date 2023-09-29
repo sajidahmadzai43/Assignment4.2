@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scroll */
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#dancers {
+    display: none; /* Initially hide all dancers */
+}
+
+.dancer {
+    position: absolute;
+}
+
+#dancer1 {
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+}
+
+#dancer2 {
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+}
+
+#dancer3 {
+    bottom: 50px; /* Positioning dancer3 above the footer */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+}
+
+#dancer4 {
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+}
+
+/* Dancing animation */
+@keyframes dancing {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.dancing {
+    animation: dancing 0.5s infinite;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#dance-gif {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+}
